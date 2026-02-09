@@ -137,9 +137,29 @@
     <!-- Newsletter Section -->
     <section class="newsletter-showcase">
         <div class="newsletter-showcase-container">
-            <!-- Google Form Embed -->
+            <!-- Newsletter Form -->
             <div class="form-embed-wrapper">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfj9BE_G06HiNELgczJ7SiXvfxM39kSjtCS_U4a2hCK472-Qw/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <form class="newsletter-showcase-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <h3>Join The Marketing Edit</h3>
+                    <p>Get exclusive tips and insights delivered weekly</p>
+
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="First Name *" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Email Address *" required>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" required>
+                            <span>I agree to receive marketing emails *</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
             </div>
 
             <!-- Desktop Mockup -->

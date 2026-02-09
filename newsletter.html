@@ -75,8 +75,32 @@
     <!-- Newsletter Form -->
     <section class="newsletter-form-section">
         <div class="container">
-            <div class="newsletter-form-embed">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfj9BE_G06HiNELgczJ7SiXvfxM39kSjtCS_U4a2hCK472-Qw/viewform?embedded=true" width="100%" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="newsletter-form-wrapper">
+                <div class="newsletter-form-header">
+                    <h2>Subscribe to The Marketing Edit</h2>
+                    <p>Join our community and get exclusive marketing insights delivered to your inbox weekly.</p>
+                </div>
+                <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="newsletter-name">First Name *</label>
+                            <input type="text" id="newsletter-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newsletter-email">Email Address *</label>
+                            <input type="email" id="newsletter-email" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" required>
+                            <span>I agree to receive marketing emails from Ravora Marketing *</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Subscribe Now</button>
+                </form>
             </div>
         </div>
     </section>
