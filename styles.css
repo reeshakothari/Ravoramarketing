@@ -2742,59 +2742,29 @@ p {
 }
 
 .desktop-screen-content {
-    background: var(--pink);
+    background: #f5f5f5;
     border-radius: 8px;
-    padding: 40px 30px;
+    padding: 20px;
     min-height: 400px;
     display: flex;
-    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .newsletter-preview-content {
-    text-align: center;
-}
-
-.newsletter-branding {
-    font-family: var(--font-secondary);
-    font-size: 12px;
-    font-weight: 400;
-    letter-spacing: 2px;
-    color: var(--white);
-    margin-bottom: 12px;
-}
-
-.newsletter-title {
-    font-family: var(--font-primary);
-    font-size: clamp(28px, 3vw, 36px);
-    color: var(--green);
-    margin-bottom: 32px;
-    font-style: italic;
-}
-
-.newsletter-preview-images {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    margin-bottom: 32px;
-}
-
-.newsletter-preview-images img {
     width: 100%;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 6px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.newsletter-tagline-bottom {
-    font-family: var(--font-secondary);
-    font-size: 11px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
-    color: var(--green);
-    background: var(--white);
-    padding: 12px;
-    border-radius: 6px;
+.newsletter-screenshot {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
 }
 
 .desktop-stand-part {
@@ -2844,15 +2814,11 @@ p {
     }
 
     .desktop-screen-content {
-        padding: 30px 20px;
-        min-height: 350px;
+        padding: 15px;
+        min-height: 300px;
     }
 
-    .newsletter-preview-images {
-        gap: 8px;
-    }
-
-    .newsletter-preview-images img {
-        height: 80px;
+    .newsletter-screenshot {
+        border-radius: 3px;
     }
 }
